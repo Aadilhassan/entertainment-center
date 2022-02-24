@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx?browser", "../../../../app/routes/movies/$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx\";", "import { useLoaderData } from \"remix\";\nexport async function loader() {\n    let res = await fetch(`https://api.themoviedb.org/3/movie/{id}?api_key=8b62f4bda40c67dbe48ddb6db1f858dc`)\n return res.json();\n}\nexport const truder = async ({ params }) => {\n  return params.id;\n};\n\n\nexport default function id() {\n    let movie = useLoaderData();\n    // console.log(movies)\n    const id = useLoaderData();\n    return (\n      <div>\n        <h1>Some Movie {movie.title}\n           {/* {id} */}\n            </h1>\n      </div>\n    );\n  }"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAUe,cAAc;AACzB,MAAI,QAAQ;AAEZ,QAAM,MAAK;AACX,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI,eAAY,MAAM;AAAA;",
+  "names": []
+}

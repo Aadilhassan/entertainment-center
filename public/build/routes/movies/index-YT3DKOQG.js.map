@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/movies/index.jsx?browser", "../../../../app/routes/movies/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/aadilhassan/my-remix-app/app/routes/movies/index.jsx\";", "export default function Index() {\n    return (\n     <div>\n  \n  \n  <h1>Hello</h1>\n  \n     </div>\n    );\n  }"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,iBAAiB;AAC5B,SACC,oCAAC,OAAD,MAGH,oCAAC,MAAD,MAAI;AAAA;",
+  "names": []
+}

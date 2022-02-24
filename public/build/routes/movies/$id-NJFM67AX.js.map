@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx?browser", "../../../../app/routes/movies/$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx\";", "export default function id() {\n    return (\n      <div>\n        <h1>Some Movie</h1>\n      </div>\n    );\n  }"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,cAAc;AACzB,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/tv/$id.jsx?browser", "../../../../app/routes/tv/$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/aadilhassan/my-remix-app/app/routes/tv/$id.jsx\";", "import { ThemeProvider } from \"react-bootstrap\";\nimport { useLoaderData, useParams } from \"remix\";\n\n\n\n\n\nexport default function tv() {\n\n    let { id } = useParams();\n    let tv = useLoaderData();\n    console.log(ThemeProvider)\n \n    return (\n      <div>\n        jgvh\n        <h1>Title:{tv.title}  </h1>\n          Id: {id}\n          \n      </div>\n    );\n  }"],
+  "mappings": ";;;;;;;;;;;;;AAAA;;;ACAA;AAOe,cAAc;AAEzB,MAAI,EAAE,OAAO;AACb,MAAI,MAAK;AACT,UAAQ,IAAI;AAEZ,SACE,oCAAC,OAAD,MAAK,QAEH,oCAAC,MAAD,MAAI,UAAO,IAAG,OAAM,OAAO,QACpB;AAAA;",
+  "names": []
+}

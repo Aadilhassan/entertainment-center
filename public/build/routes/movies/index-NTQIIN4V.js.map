@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/movies/index.jsx?browser", "../../../../app/routes/movies/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/aadilhassan/my-remix-app/app/routes/movies/index.jsx\";", "import { Form, useLoaderData, redirect } from \"remix\";\n\n\nexport async function loader() {\n    let res = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=8b62f4bda40c67dbe48ddb6db1f858dc`)\n return res.json();\n}\n\n\n\n\nexport default function Index() {\n// api --- 8b62f4bda40c67dbe48ddb6db1f858dc\n\n    let movies = useLoaderData();\n//    let movies = Array.from(useLoaderData());\n    console.log(movies)\n    return (\n\n        <ul>\n        {movies.map(movie => (\n          <li>\n            <a >{movie.results.id}</a>\n          </li>\n        ))}\n      </ul>\n    );\n  }"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAWe,iBAAiB;AAG5B,MAAI,SAAS;AAEb,UAAQ,IAAI;AACZ,SAEI,oCAAC,MAAD,MACC,OAAO,IAAI,WACV,oCAAC,MAAD,MACE,oCAAC,KAAD,MAAK,MAAM,QAAQ;AAAA;",
+  "names": []
+}

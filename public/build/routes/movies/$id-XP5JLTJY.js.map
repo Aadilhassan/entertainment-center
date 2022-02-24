@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx?browser"],
+  "sourcesContent": ["export * from \"/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx\";"],
+  "mappings": ";;;;;AAAA;",
+  "names": []
+}

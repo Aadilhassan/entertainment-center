@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/tv/$id.jsx?browser", "../../../../app/routes/tv/$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/aadilhassan/my-remix-app/app/routes/tv/$id.jsx\";", "import { ThemeProvider } from \"react-bootstrap\";\nimport { useLoaderData } from \"remix\";\nexport const truder = async ({ params }) => {\n    return params.id;\n  };\n  \n\n\nexport async function loader() {\n    let res = await fetch(`https://api.themoviedb.org/3/movie/${truder}?api_key=8b62f4bda40c67dbe48ddb6db1f858dc`);\n return res.json();\n}\n\n\nexport default function id() {\n    let tv = useLoaderData();\n    console.log(ThemeProvider)\n    const id = useLoaderData();\n    return (\n      <div>\n        <h1>Title:{tv.title}  </h1>\n          Id: {tv.id}\n          \n      </div>\n    );\n  }"],
+  "mappings": ";;;;;;;;;;;;AAAA;;;ACAA;AAce,cAAc;AACzB,MAAI,KAAK;AACT,UAAQ,IAAI;AACZ,QAAM,MAAK;AACX,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI,UAAO,GAAG,OAAM,OAAO,QACpB,GAAG;AAAA;",
+  "names": []
+}

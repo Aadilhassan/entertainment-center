@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx?browser", "../../../../app/routes/movies/$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/aadilhassan/my-remix-app/app/routes/movies/$id.jsx\";", "import { useLoaderData } from \"remix\";\n\nexport const loader = async ({ params }) => {\n  return params.id;\n};\n\n\nexport default function id() {\n    const id = useLoaderData();\n    return (\n      <div>\n        <h1>Some Movie no  {id} </h1>\n      </div>\n    );\n  }"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAOe,cAAc;AACzB,QAAM,MAAK;AACX,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI,mBAAgB,KAAG;AAAA;",
+  "names": []
+}
