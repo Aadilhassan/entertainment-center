@@ -19,11 +19,7 @@ export default function Index() {
    <div style={{display:"flex",flexWrap:"wrap", justifyContent: "space-around"}}>
         {movies.results.map(movie => (
         <Card style={{ width: '10rem', marginTop: '40px' }}>
-<<<<<<< HEAD
      <Card.Img variant="top" style={{ width: '10rem' }} src={img+movie.poster_path} />
-=======
-     <Card.Img variant="top" style={{ width: '10rem', height: '16rem' }} src={img+movie.poster_path} />
->>>>>>> 3e6f07099cd7d2228617288c530bde89a4c0d453
        <Card.Body>
         <Card.Title> <Link to={'/movies/'+ movie.id }>{movie.title}</Link>
         <Link to={'/tv/'+ movie.id} >{movie.name}</Link>
