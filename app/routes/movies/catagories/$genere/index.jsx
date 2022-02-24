@@ -1,12 +1,12 @@
-import { Form, useLoaderData, redirect, Link } from "remix";
+import { Form, useLoaderData, redirect, Link, useParams } from "remix";
 import { Card } from "react-bootstrap";
+ 
 
-export async function loader() {
-    let res = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=8b62f4bda40c67dbe48ddb6db1f858dc`)
+export async function loader({params}) {
+
+    let res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=8b62f4bda40c67dbe48ddb6db1f858dc&with_genres=`+params.genere)
  return res.json();
 }
-
-
 
 
 export default function Index() {
@@ -16,14 +16,10 @@ export default function Index() {
 //    let movies = Array.from(useLoaderData());
 
     return (
-   <div style={{display:"flex",flexWrap:"wrap", justifyContent: "space-around"}}>
+        <div style={{display:"flex",flexWrap:"wrap", justifyContent: "space-around"}}>
         {movies.results.map(movie => (
         <Card style={{ width: '10rem', marginTop: '40px' }}>
-<<<<<<< HEAD
-     <Card.Img variant="top" style={{ width: '10rem' }} src={img+movie.poster_path} />
-=======
      <Card.Img variant="top" style={{ width: '10rem', height: '16rem' }} src={img+movie.poster_path} />
->>>>>>> 3e6f07099cd7d2228617288c530bde89a4c0d453
        <Card.Body>
         <Card.Title> <Link to={'/movies/'+ movie.id }>{movie.title}</Link>
         <Link to={'/tv/'+ movie.id} >{movie.name}</Link>
